@@ -9,13 +9,13 @@ const Section03 = () => {
         <div className="xxs:h-[500px] md:h-[600px] w-full  ">
           <div className="xxs:h-[50%] md:h-[70%] w-full  ">
             <h1 className="font-extrabold  text-bgwhite xxs:text-3xl md:text-5xl xl:text-6xl leading-[1.1em] xxs:w-[90%] md:w-[600px]  ">
-              A Web Developer with a knack for creating dynamic and engaging web
+              A Self Taught Front End Developer creating dynamic web
               experiences.
             </h1>
 
             <div className="flex justify-center items-center h-[40px] w-[120px] mt-5 ">
               <Link
-                className=" gap-1 uppercase text-sm flex justify-center items-center"
+                className=" gap-1 uppercase text-sm flex justify-center items-center z-30"
                 href={
                   "https://drive.google.com/file/d/1WPOsbEdz4iMalZEjsMQJOG-XJAr7LmuP/view?usp=drive_link"
                 }
@@ -35,17 +35,17 @@ const Section03 = () => {
           <div className="xxs:h-[50%] md:h-[30%]  w-full flex xxs:flex-col xxs:items-start sm:flex-row md:justify-start md:items-center xxs:gap-1 sm:gap-5">
             <AnimatedAbout
               title="About Me"
-              para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ipsum non et ratione dolore."
+              para="A Front End Developer with 2 years of experience turning UI designs into fully functional websites."
               image="/about/introduction.png"
             />
             <AnimatedAbout
               title="Story"
-              para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ipsum non et ratione dolore."
+              para="A biology student who took drop for med school found coding interesting and went all in on web development."
               image="/about/story.png"
             />
             <AnimatedAbout
               title="Skills"
-              para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ipsum non et ratione dolore."
+              para="Really good with HTML5, CSS, TailwindCSS, and know way around JavaScript, React, NextJs, and GSAP Animations."
               image="/about/skills.png"
             />
           </div>

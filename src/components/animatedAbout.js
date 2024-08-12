@@ -76,7 +76,7 @@ const AnimatedAbout = ({ image, title, para }) => {
     <div>
       <div
         ref={containerRef}
-        className="xxs:h-[70px] xxs:w-[70px] sm:h-[120px] sm:w-[120px] relative overflow-hidden z-40"
+        className="xxs:h-[70px] xxs:w-[70px] sm:h-[120px] sm:w-[120px] relative overflow-hidden z-30"
         onClick={handleClick}
         style={{ cursor: "pointer" }}
       >
@@ -93,10 +93,12 @@ const AnimatedAbout = ({ image, title, para }) => {
           />
         </div>
         <div className="h-full w-[220px] right-0  absolute">
-          <p className=" xxs:text-xs md:text-sm lg:text-base ">{para}</p>
+          <p className=" xxs:text-xs md:text-sm lg:text-base text-balance ">
+            {para}
+          </p>
         </div>
       </div>
-      <h3 className="xxs:ml-[10px] sm:ml-[20px] xxs:text-sm sm:text-lg opacity-75 z-50">
+      <h3 className="xxs:ml-[10px] text-slate-300 sm:ml-[20px] xxs:text-sm sm:text-lg opacity-75 z-10">
         {title}
       </h3>
     </div>

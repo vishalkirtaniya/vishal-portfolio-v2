@@ -8,7 +8,7 @@ const Home = () => {
         <div className="h-[65%] w-full flex justify-between montserratFont ">
           <Hero01 />
         </div>
-        <div className="bg-gray-600 h-[3px] w-full"></div>
+        <div className="bg-githubblack h-[3px] w-full"></div>
         <div className="flex  xxs:h-[20%] md:h-[15%] w-full justify-end ">
           <Hero02 />
         </div>

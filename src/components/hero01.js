@@ -12,7 +12,7 @@ function Hero01() {
         <div className="xxs:h-[20px] xxs:w-[80px] md:h-[35px] md:w-[100px] bg-bgblue flex justify-center items-center xxs:mt-3 md:mt-7">
           <Link
             href={"/contact"}
-            className="flex justify-center gap-1 items-center"
+            className="flex justify-center gap-1 items-center z-30"
           >
             <h3 className="text-bgwhite font-semibold uppercase xxs:text-xs md:text-sm ">
               Reach Me

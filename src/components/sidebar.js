@@ -47,7 +47,7 @@ const SideBar = () => {
 
   return (
     <>
-      <div className="h-[50vh] items-center w-[80%] flex   montserratFont font-normal ">
+      <div className="h-[50vh] items-center w-[80%] flex   montserratFont font-normal z-30">
         <ul className="left-side-nav h-full w-1/5 flex flex-col justify-around items-start text-white ">
           <li>
             <span className="trigger text-customGrey pl-3">01</span>

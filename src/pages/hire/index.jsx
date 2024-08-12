@@ -1,4 +1,4 @@
-import FormInput from "../../src/components/formInput";
+import FormInput from "@/src/components/formInput";
 import { useState } from "react";
 
 const Section05 = () => {

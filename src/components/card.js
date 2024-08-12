@@ -84,7 +84,11 @@ const Card = () => {
   return (
     <div className="flex justify-center items-center h-full w-full">
       <div className="h-4/5 w-1/12 flex justify-center items-center self-start">
-        <button className="leftButton" onClick={moveLeft} ref={leftButtonRef}>
+        <button
+          className="leftButton z-30"
+          onClick={moveLeft}
+          ref={leftButtonRef}
+        >
           <div className="h-[50px] w-[50px] rounded-full bg-gray-600 flex justify-center items-center">
             <Image
               className="rotate-180"
@@ -152,7 +156,7 @@ const Card = () => {
       </div>
       <div className="h-4/5 w-1/12 self-start flex justify-center items-center ">
         <button
-          className="rightButton"
+          className="rightButton z-30"
           onClick={moveRight}
           ref={rightButtonRef}
         >

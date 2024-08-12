@@ -112,7 +112,7 @@ const Card = () => {
                 ref={(el) => (cardsRef.current[index] = el)}
               >
                 <Image
-                  className="hover:scale-105 transition duration-150 ease-in-out"
+                  className="hover:scale-105 transition duration-150 ease-in-out z-30"
                   src={item.src}
                   height={isMiddleCard ? 250 : 150}
                   width={isMiddleCard ? 250 : 150}
@@ -142,7 +142,7 @@ const Card = () => {
             rel="noopener noreferrer"
             className="title-link z-30"
           >
-            <h3 className="text-lg font-bold title" ref={titleRef}>
+            <h3 className="text-lg font-bold title z-30" ref={titleRef}>
               {currentItems[1].title}
             </h3>
           </Link>

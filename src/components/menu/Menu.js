@@ -47,14 +47,14 @@ const Menu = () => {
       menuButton.current = gsap
         .timeline({ paused: true })
         .to(".up1", {
-          y: 10,
+          y: 9,
           duration: 0.3,
           ease: "power1.in",
         })
         .to(
           ".down1",
           {
-            y: -10,
+            y: -9,
             duration: 0.3,
             ease: "power1.in",
           },

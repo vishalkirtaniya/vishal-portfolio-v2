@@ -5,10 +5,12 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
 const sections = ["/", "/work", "/about", "/contact"];
+const TOUCH_SENSITIVITY_THRESHOLD = 50; // Adjust this threshold as necessary
 
 const ScrollManager = () => {
   const router = useRouter();
   const [isScrolling, setIsScrolling] = useState(false);
+  const [touchStartY, setTouchStartY] = useState(null);
 
   useEffect(() => {
     const handleScroll = (event) => {
@@ -22,11 +24,35 @@ const ScrollManager = () => {
       }
     };
 
+    const handleTouchStart = (event) => {
+      setTouchStartY(event.touches[0].clientY);
+    };
+
+    const handleTouchEnd = (event) => {
+      const touchEndY = event.changedTouches[0].clientY;
+      if (touchStartY === null) return;
+
+      const swipeDistance = touchStartY - touchEndY;
+      if (Math.abs(swipeDistance) > TOUCH_SENSITIVITY_THRESHOLD) {
+        if (swipeDistance > 0) {
+          navigateToNextPage();
+        } else {
+          navigateToPreviousPage();
+        }
+        setTouchStartY(null);
+      }
+    };
+
     window.addEventListener("wheel", handleScroll);
+    window.addEventListener("touchstart", handleTouchStart);
+    window.addEventListener("touchend", handleTouchEnd);
+
     return () => {
       window.removeEventListener("wheel", handleScroll);
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchend", handleTouchEnd);
     };
-  }, [isScrolling, router.pathname]);
+  }, [isScrolling, router.pathname, touchStartY]);
 
   const navigateToNextPage = () => {
     const currentIndex = sections.indexOf(router.pathname);

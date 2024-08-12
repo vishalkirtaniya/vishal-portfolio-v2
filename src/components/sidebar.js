@@ -10,31 +10,32 @@ const SideBar = () => {
 
   useEffect(() => {
     const handleRouteChange = () => {
-      const activeLink = document.querySelector(".active-link");
-      const allLinks = document.querySelectorAll(".trigger");
-      if (activeLink) {
-        // Animate the active link
-        const tl = gsap.timeline();
-        tl.to(activeLink, {
-          x: 50,
-          color: "#ffffff",
-          fontWeight: 500, // Make the font bold
-          duration: 0.5,
-          ease: "power3.out",
-        });
-      }
+      requestAnimationFrame(() => {
+        const activeLink = document.querySelector(".active-link");
+        const allLinks = document.querySelectorAll(".trigger");
 
-      // Reset animations for all links
-      allLinks.forEach((link) => {
-        if (!link.classList.contains("active-link")) {
-          gsap.to(link, {
-            x: 0,
-            color: "#555658",
-            fontWeight: 400,
+        if (activeLink) {
+          const tl = gsap.timeline();
+          tl.to(activeLink, {
+            x: 50,
+            color: "#ffffff",
+            fontWeight: 500,
             duration: 0.5,
-            ease: "power3.in",
+            ease: "power3.out",
           });
         }
+
+        allLinks.forEach((link) => {
+          if (!link.classList.contains("active-link")) {
+            gsap.to(link, {
+              x: 0,
+              color: "#555658",
+              fontWeight: 400,
+              duration: 0.5,
+              ease: "power3.in",
+            });
+          }
+        });
       });
     };
 
@@ -47,8 +48,8 @@ const SideBar = () => {
 
   return (
     <>
-      <div className="h-[50vh] items-center w-[80%] flex   montserratFont font-normal z-30">
-        <ul className="left-side-nav h-full w-1/5 flex flex-col justify-around items-start text-white ">
+      <div className="h-[50vh] items-center w-[80%] flex montserratFont font-normal z-30">
+        <ul className="left-side-nav h-full w-1/5 flex flex-col justify-around items-start text-white">
           <li>
             <span className="trigger text-customGrey pl-3">01</span>
           </li>
@@ -61,11 +62,8 @@ const SideBar = () => {
           <li>
             <span className="trigger text-customGrey pl-3">04</span>
           </li>
-          {/* <li>
-            <span className="trigger text-customGrey pl-3">05</span>
-          </li> */}
         </ul>
-        <div className="midLine h-full w-[2px] bg-gray-600"></div>
+        <div className="midLine h-full w-[2px] bg-githubblack"></div>
         <ul className="right-side-nav h-full w-4/5 flex flex-col justify-around items-start pl-3 text-white">
           <li>
             <Link
@@ -109,16 +107,6 @@ const SideBar = () => {
               Contact
             </Link>
           </li>
-          {/* <li>
-            <Link
-              href="/hire"
-              className={
-                router.pathname === "/hire" ? "trigger active-link" : "trigger"
-              }
-            >
-              Hire Me
-            </Link>
-          </li> */}
         </ul>
       </div>
     </>

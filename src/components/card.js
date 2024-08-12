@@ -140,7 +140,7 @@ const Card = () => {
             href={currentItems[1].url}
             target="_blank"
             rel="noopener noreferrer"
-            className="title-link"
+            className="title-link z-30"
           >
             <h3 className="text-lg font-bold title" ref={titleRef}>
               {currentItems[1].title}

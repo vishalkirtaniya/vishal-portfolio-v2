@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
 const sections = ["/", "/work", "/about", "/contact"];
-const TOUCH_SENSITIVITY_THRESHOLD = 50; // Adjust this threshold as necessary
+const TOUCH_SENSITIVITY_THRESHOLD = 30; // Adjust this threshold as necessary
 
 const ScrollManager = () => {
   const router = useRouter();

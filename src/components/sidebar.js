@@ -6,10 +6,10 @@ import { gsap } from "gsap";
 import { useRouter } from "next/router";
 
 const pathLinks = [
-  { path: "/", label: "Home", no: 1 },
-  { path: "/work", label: "Work", no: 2 },
-  { path: "/about", label: "About", no: 3 },
-  { path: "/contact", label: "Contact", no: 4 },
+  { path: "/", label: "Home", no: "01" },
+  { path: "/work", label: "Work", no: "02" },
+  { path: "/about", label: "About", no: "03" },
+  { path: "/contact", label: "Contact", no: "04" },
 ];
 
 const SideBar = () => {
@@ -46,10 +46,10 @@ const SideBar = () => {
 
   return (
     <div className="h-[50vh] items-center w-[80%] flex montserratFont font-normal z-30">
-      <ul className="left-side-nav h-full w-1/5 flex flex-col justify-around items-start text-white">
+      <ul className="left-side-nav h-full w-1/5 flex flex-col justify-around items-end text-white pr-3">
         {pathLinks.map((link, index) => (
           <li key={index}>
-            <span className="text-center text-[#555658]">{link.no}</span>
+            <span className=" text-[#555658]">{link.no}</span>
           </li>
         ))}
       </ul>

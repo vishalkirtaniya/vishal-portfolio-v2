@@ -108,38 +108,35 @@ const Menu = () => {
       ref={container}
     >
       <div className="h-[10vh] w-full flex justify-center z-50 fixed">
-        <nav className="flex montserratFont items-center justify-between  w-[90%] container h-[6vh] max-w-[1383px]  ">
-          <div className="h-full w-1/5 flex items-center justify-between ">
-            <div className="leftSideButton h-full w-[300px]  ">
-              <Link href="/" className="flex items-center justify-start ">
-                <div className="logoContainer flex items-center ">
-                  <Image
-                    className=""
-                    src="/logo.svg"
-                    width={50}
-                    height={50}
-                    alt="logo"
-                  />
-                </div>
-                <div className="nameContainer">
-                  <h1 className=" font-bold leading-6 text-md uppercase text-white">
-                    Vishal Kirtaniya
-                  </h1>
-                </div>
-              </Link>
-            </div>
+        <nav className="flex montserratFont items-center justify-between  w-[90%] container h-[6vh] max-w-[1383px] ">
+          <div className="leftSideButton h-full w-[300px]  ">
+            <Link href="/" className="flex items-center justify-start ">
+              <div className="logoContainer flex items-center ">
+                <Image
+                  className=""
+                  src="/logo.svg"
+                  width={50}
+                  height={50}
+                  alt="logo"
+                />
+              </div>
+              <div className="nameContainer">
+                <h1 className=" font-bold leading-6 text-md uppercase text-white">
+                  Vishal Kirtaniya
+                </h1>
+              </div>
+            </Link>
           </div>
-          <div className="h-full w-4/5 flex items-center justify-end ">
-            <div className="h-full w-[100px] ">
-              <div className="rightSideButton h-full w-full flex justify-end items-center ">
-                <div
-                  className="h-[20px] w-[30px]  flex flex-col justify-between items-center hover:cursor-pointer z-30"
-                  onClick={toggleMenu}
-                >
-                  <div className="h-[2px] w-full up1 border border-bgwhite rounded-full"></div>
-                  <div className="h-[2px] w-[60%] mid1 border border-bgwhite rounded-full"></div>
-                  <div className="h-[2px] w-full down1 border border-bgwhite rounded-full"></div>
-                </div>
+
+          <div className="h-full w-[100px] ">
+            <div className="rightSideButton h-full w-full flex justify-end items-center ">
+              <div
+                className="h-[20px] w-[30px]  flex flex-col justify-between items-center hover:cursor-pointer z-30"
+                onClick={toggleMenu}
+              >
+                <div className="h-[2px] w-full up1 border border-bgwhite rounded-full"></div>
+                <div className="h-[2px] w-[60%] mid1 border border-bgwhite rounded-full"></div>
+                <div className="h-[2px] w-full down1 border border-bgwhite rounded-full"></div>
               </div>
             </div>
           </div>

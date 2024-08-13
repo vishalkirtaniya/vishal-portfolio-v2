@@ -108,7 +108,9 @@ const Card = () => {
               <div
                 className={`card h-[${isMiddleCard ? "250px" : "150px"}] w-[${
                   isMiddleCard ? "250px" : "150px"
-                }] rounded-full overflow-hidden flex justify-center items-center`}
+                }] rounded-full overflow-hidden flex justify-center items-center ${
+                  isMiddleCard ? "md:block xxs:block" : "md:block xxs:hidden"
+                }`}
                 ref={(el) => (cardsRef.current[index] = el)}
               >
                 <Image

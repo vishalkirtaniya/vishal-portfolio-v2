@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
         <meta name="description" content="My personal portfolio" />
         <link rel="icon" href="/logo.svg" type="image/x-icon"></link>
       </Head>
-      <div className="flex flex-col bg-bgblack w-full h-full mx-auto z-0  ">
+      <div className="flex flex-col bg-bgblack w-full h-full mx-auto z-0 select-none ">
         <header className="h-[10vh] w-full flex justify-center z-0 ">
           {/* <Nav /> */}
         </header>

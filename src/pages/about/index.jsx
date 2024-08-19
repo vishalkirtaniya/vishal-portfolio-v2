@@ -17,7 +17,7 @@ const Section03 = () => {
               <Link
                 className=" gap-1 uppercase text-sm flex justify-center items-center z-30"
                 href={
-                  "https://drive.google.com/file/d/1WPOsbEdz4iMalZEjsMQJOG-XJAr7LmuP/view?usp=drive_link"
+                  "https://drive.google.com/file/d/1VtbQXvpxMl8J6u8XL_L_3scwJgOcuYgA/view?usp=sharing"
                 }
                 target="_blank"
               >

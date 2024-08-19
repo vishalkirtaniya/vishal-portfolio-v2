@@ -31,6 +31,12 @@ const Card = () => {
       subTitle: "A Sample Website for a Coffee Brand",
       url: "https://commercialcoffee.netlify.app/",
     },
+    {
+      src: "/work/project05.png",
+      title: "Graphic Designer Portfolio",
+      subTitle: "Portfolio Website built with html, css, and javascript",
+      url: "https://www.shilpakirtaniya.in/",
+    },
   ]);
 
   const [currentIndex, setCurrentIndex] = useState(0);

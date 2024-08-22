@@ -17,7 +17,7 @@ const Section03 = () => {
               <Link
                 className=" gap-1 uppercase text-sm flex justify-center items-center z-30"
                 href={
-                  "https://drive.google.com/file/d/1VtbQXvpxMl8J6u8XL_L_3scwJgOcuYgA/view?usp=sharing"
+                  "https://drive.google.com/file/d/1gKO3KWbf18TeGcj2yR-QM0VN2MqViVMv/view?usp=sharing"
                 }
                 target="_blank"
               >
@@ -45,7 +45,7 @@ const Section03 = () => {
             />
             <AnimatedAbout
               title="Skills"
-              para="Really good with HTML5, CSS, TailwindCSS, and know way around JavaScript, React, NextJs, and GSAP Animations."
+              para="Really good with JavaScript, React, NextJs, GSAP Animations, and know way around with HTML5, CSS, and TailwindCSS."
               image="/about/skills.png"
             />
           </div>

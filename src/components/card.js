@@ -47,7 +47,7 @@ const Card = () => {
   const titleRef = useRef(null);
   const subTitleRef = useRef(null);
 
-  const moveRight = () => {
+  const moveLeft = () => {
     const newIndex = (currentIndex === 0 ? items.length : currentIndex) - 1;
     gsap.to([cardsRef.current, titleRef.current, subTitleRef.current], {
       opacity: 0,
@@ -62,7 +62,7 @@ const Card = () => {
     });
   };
 
-  const moveLeft = () => {
+  const moveRight = () => {
     const newIndex = (currentIndex + 1) % items.length;
     gsap.to([cardsRef.current, titleRef.current, subTitleRef.current], {
       opacity: 0,

@@ -37,6 +37,18 @@ const Card = () => {
       subTitle: "Portfolio Website built with html, css, and javascript",
       url: "https://www.shilpakirtaniya.in/",
     },
+    {
+      src: "/work/project06.png",
+      title: "Rental Housing Front End",
+      subTitle: "Front End part of a e-commerce booking website",
+      url: "https://totality-housing-market.netlify.app/",
+    },
+    {
+      src: "/work/project07.png",
+      title: "Weather Forecast Application",
+      subTitle: "Fully Functional Weather Application built using Next.js",
+      url: "https://weather-forecast-07.netlify.app/",
+    },
   ]);
 
   const [currentIndex, setCurrentIndex] = useState(0);

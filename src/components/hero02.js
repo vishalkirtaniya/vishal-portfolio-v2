@@ -1,4 +1,3 @@
-import React from "react";
 import AnimatedHero02 from "./animatedHero02";
 
 const Hero02 = () => {
@@ -6,11 +5,11 @@ const Hero02 = () => {
     <>
       <AnimatedHero02
         title="About Me"
-        content="Hey, I'm Vishal Kirtaniya, I make stunning websites that make your brand shine"
+        content="Hey, I'm Vishal Kirtaniya, experienced in automation, dashboards, and backend"
       />
       <AnimatedHero02
         title="Technologies and Tools"
-        content="I have experience in React, Next.js, GSAP, Tailwindcss, html5 and more."
+        content="I have experience in React, Next.js, Node.js, Python, MySQl and more."
       />
     </>
   );

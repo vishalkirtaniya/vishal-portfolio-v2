@@ -3,15 +3,20 @@ import Hero02 from "@/components/hero02";
 
 const Home = () => {
   return (
-    <section className="section trigger01 montserratFont h-[90vh] w-full bg-bgblack flex justify-start items-center  ">
-      <div className="xxs:h-[400px] md:h-[600px] w-full flex flex-col xxs:self-center lg:self-end lg:mb-10 ">
-        <div className="h-[65%] w-full flex justify-between montserratFont ">
-          <Hero01 />
-        </div>
-        <div className="bg-githubblack h-[3px] w-full"></div>
-        <div className="flex  xxs:h-[20%] md:h-[15%] w-full justify-end ">
+    <section className="w-full bg-bgblack flex items-center justify-center px-4 lg:px-0">
+      <div className="w-full max-w-7xl flex flex-col py-10">
+        
+        {/* HERO 01 */}
+        <Hero01 />
+
+        {/* Divider */}
+        <div className="bg-githubblack h-[2px] w-full mb-4" />
+
+        {/* HERO 02 */}
+        <div className="flex flex-col lg:flex-row justify-end gap-4">
           <Hero02 />
         </div>
+
       </div>
     </section>
   );

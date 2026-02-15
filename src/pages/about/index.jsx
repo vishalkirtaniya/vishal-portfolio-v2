@@ -9,7 +9,7 @@ const Section03 = () => {
         <div className="xxs:h-[500px] md:h-[600px] w-full  ">
           <div className="xxs:h-[50%] md:h-[70%] w-full  ">
             <h1 className="font-extrabold  text-bgwhite xxs:text-3xl md:text-5xl xl:text-6xl leading-[1.1em] xxs:w-[90%] md:w-[600px]  ">
-              A Self Taught Front End Developer creating dynamic web
+              A Self Taught Full-Stack Developer creating dynamic web
               experiences.
             </h1>
 
@@ -17,7 +17,7 @@ const Section03 = () => {
               <Link
                 className=" gap-1 uppercase text-sm flex justify-center items-center z-30"
                 href={
-                  "https://drive.google.com/file/d/10B7KznohSe8MQnt8o4tgZJQexunX8kNP/view?usp=sharing"
+                  "https://drive.google.com/file/d/1F2rb08ujEX9Ll1bmoq7sB7pksv6_ng1o/view?usp=sharing"
                 }
                 target="_blank"
               >
@@ -35,17 +35,17 @@ const Section03 = () => {
           <div className="xxs:h-[50%] md:h-[30%]  w-full flex xxs:flex-col xxs:items-start sm:flex-row md:justify-start md:items-center xxs:gap-1 sm:gap-5">
             <AnimatedAbout
               title="About Me"
-              para="A Front End Developer with 2 years of experience turning UI designs into fully functional websites."
+              para="A Full Stack Developer with 2 years of experience turning UI designs into scalable web applications"
               image="/about/introduction.png"
             />
             <AnimatedAbout
               title="Story"
-              para="A biology student who took drop for med school found coding interesting and went all in on web development."
+              para="A biology student who took drop for med school found coding interesting and went all in on Programming"
               image="/about/story.png"
             />
             <AnimatedAbout
               title="Skills"
-              para="Really good with JavaScript, React, NextJs, GSAP Animations, and know way around with HTML5, CSS, and TailwindCSS."
+              para="Really good with Python, React, NextJs, Node.js, and know way around with MongoDB, MySQL, and Deployment."
               image="/about/skills.png"
             />
           </div>

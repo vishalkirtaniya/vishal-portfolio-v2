@@ -1,44 +1,43 @@
-import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 function Hero01() {
   return (
-    <>
-      <div className="heroContent xxs:w-full md:w-1/2 h-full ">
-        <h1 className="font-extrabold  text-bgwhite  xxs:text-4xl lg:text-5xl 2xl:text-6xl leading-[1.05em] ">
+    <div className="relative w-full min-h-[65vh] flex items-center">
+
+      {/* TEXT */}
+      <div className="w-full lg:w-1/2 z-10">
+        <h1 className="font-extrabold text-bgwhite text-4xl lg:text-5xl 2xl:text-6xl leading-[1.05]">
           Crafting Digital Experiences with Animation and Code
         </h1>
-        <div className="xxs:h-[20px] xxs:w-[80px] md:h-[35px] md:w-[100px] bg-bgblue flex justify-center items-center xxs:mt-3 md:mt-7">
-          <Link
-            href={"/contact"}
-            className="flex justify-center gap-1 items-center z-30"
-          >
-            <h3 className="text-bgwhite font-semibold uppercase xxs:text-xs md:text-sm ">
+
+        <div className="mt-6 inline-flex bg-bgblue px-4 py-2">
+          <Link href="/contact" className="flex items-center gap-2">
+            <span className="text-bgwhite font-semibold uppercase text-sm">
               Reach Me
-            </h3>
+            </span>
             <Image
-              className="xxs:h-[10px] xxs:w-[10px] sm:h-[12px] sm:w-[12px] md:h-[15px] md:w-[15px] lg:h-[18px] lg:w-[18px] "
               src="/arrow.svg"
-              height={18}
-              width={18}
-              alt="arrow svg"
+              height={16}
+              width={16}
+              alt="arrow"
               priority
             />
           </Link>
         </div>
       </div>
-      <div className="heroImageContainer xxs:hidden md:block xxs:w-full md:w-1/2 xxs:h-1/2 md:h-full flex justify-center items-end  relative">
+
+      {/* IMAGE (desktop only, controlled absolute) */}
+      <div className="hidden lg:block absolute right-0 bottom-0">
         <Image
-          className="bottom-0 absolute right-0"
           src="/hero-image.webp"
-          height={500}
-          width={500}
-          alt="heroImage"
+          height={520}
+          width={520}
+          alt="hero"
           priority
         />
       </div>
-    </>
+    </div>
   );
 }
 
